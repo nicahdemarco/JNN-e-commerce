@@ -1,4 +1,4 @@
-<?php include_once('baseDatos.php');
+<?php require_once('baseDatos.php');
 ?>
 <!-- esto esta linkeado para mas adelante -->
 <!doctype html>
@@ -8,23 +8,19 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    
+	<link rel="stylesheet" href="./CSS/master.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./CSS/master.css">
+
     
 
     <title>JNN-e-commerce</title>
 </head>
 
 <div class="container">
-
-        <!-- En este archivo esta toda la estructura html, a medida que cada seccion se termine,
-        hay que reemplazarla con la seccion php insertada -->
-
-
-
+        
         <!-- cabecera - Aca vamos a tener una navbar que tiene un logo, una barra de busqueda, 
         un boton de crear cuenta y un boton de ingresar, un icono de carrito -->
 		<header class="main-header">
@@ -46,16 +42,43 @@
 
 		<!-- carrousel de productos de tres slides, Bootstrap tiene bastante facil-->
 		<section class="carousel">
-			<img src="images/img-banner.jpg" alt="banner">
+
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="height:40vh; background-color:green;">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+				<img src="..." class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+				<img src="..." class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+				<img src="..." class="d-block w-100" alt="...">
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+
         </section>
 
 		<!-- seccion que va a decir metodos de pago y demas -->
         <section class="banner">
-			<div></div>
+			<div class="metodos" style="background-color:red; color:blue;">metodos de pago</div>
 		</section>
 
 		<!-- productos -->
-		<section class="lista 1 de productos">
+		<section class="productos">
 			<?php foreach ($articulos as $key => $value):?>
 					<article class="product">
 						<div class="photo-container">
@@ -70,7 +93,7 @@
 			<?php endforeach;?>
         </section>
 
-        <section class="lista 2 de productos">
+        <section class="productos">
 			<?php foreach ($articulos as $key => $value):?>
 					<article class="product">
 						<div class="photo-container">
@@ -85,7 +108,7 @@
 			<?php endforeach;?>
         </section>
 
-        <section class="lista 3 de productos">
+        <section class="productos">
 			<?php foreach ($articulos as $key => $value):?>
 					<article class="product">
 						<div class="photo-container">
@@ -102,16 +125,7 @@
         
 
 		<!-- footer -  Aca ponemos las secciones raras como las preguntas y contactos, etc.-->		
-		<footer class="main-footer">
-			<ul>
-				<li><a href="#">home</a></li>
-				<li><a href="#">quienes</a></li>
-				<li><a href="#">servicios</a></li>
-				<li><a href="#">portfolio</a></li>
-				<li><a href="#">sucursales</a></li>
-				<li><a href="#">contacto</a></li>
-			</ul>
-		</footer>
+		
 	</div>
 
 	</body>

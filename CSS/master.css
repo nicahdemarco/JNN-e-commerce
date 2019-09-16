@@ -1,5 +1,8 @@
-@import "./asd.css";
-@import "./asd.css";
-@import "./asd.css";
-@import "./a.css";
+@import "../CSS/index.css";
+
 /* cuando definamos las secciones ponemos los nombres */
+
+*{
+    background-color: red;
+    box-sizing: border-box;
+}
