@@ -78,7 +78,7 @@
 		</section>
 
 		<!-- productos -->
-		<section class="productos">
+		<section class="lista">
 			<?php foreach ($articulos as $key => $value):?>
 					<article class="product">
 						<div class="photo-container">
