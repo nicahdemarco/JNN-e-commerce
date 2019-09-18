@@ -3,6 +3,8 @@
 /* cuando definamos las secciones ponemos los nombres */
 
 *{
-    background-color: green;
+    /* background-color: red; */
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
