@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    
 	<link rel="stylesheet" href="CSS/master.css">
     <title>JNN-e-commerce</title>
 </head>
@@ -23,47 +22,33 @@
         <!-- cabecera - Aca vamos a tener una navbar que tiene un logo, una barra de busqueda, 
         un boton de crear cuenta y un boton de ingresar, un icono de carrito -->
 		<header class="main-header">
-			<img src="images/logo.jpg" alt="logotipo" class="logo">
-
-			<a href="#" class="toggle-nav">
-				<span class="fa fa-bars"></span>
-			</a>
-
-			<nav class="main-nav">
-				<ul>
-					<li><a href="#"> crear cuenta</a></li>
-					<li><a href="#">ingresar</a></li>
-					<li><a href="#">carrito</a></li>
-					
-				</ul>
-			</nav>
 		</header>
 
 		<!-- carrousel de productos de tres slides, Bootstrap tiene bastante facil-->
 		<section class="carousel">
 
-		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="height:40vh; background-color:green;">
-			<ol class="carousel-indicators">
-				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		<div id="carouselProductosIndicadores" class="carousel slide" data-ride="carousel" style="height:40vh; background-color:green;">
+			<ol class="carousel-indicadores">
+				<li data-target="#carouselProductosIndicadores" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselProductosIndicadores" data-slide-to="1"></li>
+				<li data-target="#carouselProductosIndicadores" data-slide-to="2"></li>
 			</ol>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-				<img src="..." class="d-block w-100" alt="...">
+				<img src="..." class="d-block w-100" alt="...">Probando!
 				</div>
 				<div class="carousel-item">
-				<img src="..." class="d-block w-100" alt="...">
+				<img src="..." class="d-block w-100" alt="...">Probando mas
 				</div>
 				<div class="carousel-item">
-				<img src="..." class="d-block w-100" alt="...">
+				<img src="..." class="d-block w-100" alt="...">Probando mas y mas
 				</div>
 			</div>
-			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			<a class="carousel-control-prev" href="#carouselProductosIndicadores" role="button" data-slide="prev">
 				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 				<span class="sr-only">Previous</span>
 			</a>
-			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			<a class="carousel-control-next" href="#carouselProductosIndicadores" role="button" data-slide="next">
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				<span class="sr-only">Next</span>
 			</a>
