@@ -3,8 +3,8 @@
 $articulos = [
 	0=>[
 		"imagen"=>"img-pdto-1.jpg",
-		"titulo"=>"Lorem ipsum amet",
-		"descripcion"=>"Eeeehhhhhhhhhhh sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex."			
+		"titulo"=>"HOla HOla",
+		"descripcion"=>"Eeeehhhhhh sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex."			
 	],
 	1=>[
 		"imagen"=>"img-pdto-2.jpg",
