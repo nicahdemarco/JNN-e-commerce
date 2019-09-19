@@ -12,22 +12,22 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
 	<link rel="stylesheet" href="CSS/master.css">
     <title>JNN-e-commerce</title>
 </head>
 
-<div class="container">
+<div class="container-fluid">
         
         <!-- cabecera - Aca vamos a tener una navbar que tiene un logo, una barra de busqueda, 
         un boton de crear cuenta y un boton de ingresar, un icono de carrito -->
 		<header class="main-header">
+			
 		</header>
 
-		<!-- carrousel de productos de tres slides, Bootstrap tiene bastante facil-->
 		<section class="carousel">
 
-		<div id="carouselProductosIndicadores" class="carousel slide" data-ride="carousel" style="height:40vh; background-color:green;">
+		<div id="carouselProductosIndicadores" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicadores">
 				<li data-target="#carouselProductosIndicadores" data-slide-to="0" class="active"></li>
 				<li data-target="#carouselProductosIndicadores" data-slide-to="1"></li>
@@ -35,13 +35,13 @@
 			</ol>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-				<img src="..." class="d-block w-100" alt="...">Probando!
+					<img src="..." class="d-block w-100" alt="...">Probando!
 				</div>
 				<div class="carousel-item">
-				<img src="..." class="d-block w-100" alt="...">Probando mas
+					<img src="..." class="d-block w-100" alt="...">Probando mas
 				</div>
 				<div class="carousel-item">
-				<img src="..." class="d-block w-100" alt="...">Probando mas y mas
+					<img src="..." class="d-block w-100" alt="...">Probando mas y mas
 				</div>
 			</div>
 			<a class="carousel-control-prev" href="#carouselProductosIndicadores" role="button" data-slide="prev">
@@ -58,55 +58,66 @@
 
 		<!-- seccion que va a decir metodos de pago y demas -->
         <section class="banner">
-			<div class="metodos" style="background-color:red; color:blue;">metodos de pago</div>
+			<div class="metodos"><i class="far fa-credit-card"></i>Tarjetas de crédito</div>
+			<div class="metodos"><i class="far fa-credit-card"></i>Tarjetas de débito</div>
+			<div class="metodos"><i class="fas fa-money-bill"></i>Efectivo y transferencia</div>
+			<div class="metodos"><i class="fas fa-shipping-fast"></i>Envíos a todo el país</div>
 		</section>
 
 		<!-- productos -->
-		<section class="lista">
+		<div class="container contenedor-productos">
+			<span class="titulo-lista">
+				Lista de productos
+			</span>
+		<section class="col-md-12 col-sm-12 productos">
+			
 			<?php foreach ($articulos as $key => $value):?>
-					<article class="product">
+					<article class="product-card">
 						<div class="photo-container">
-							<img class="photo" src="images/<?= $value['imagen'];?>" alt="pdto 01">
-							<img class="special" src="images/img-nuevo.png" alt="plato nuevo">
-							<a class="zoom" href="#">Ampliar foto</a>
+							<img class="photo" src="images/catalogo/<?= $value['imagen'];?>" alt="pdto 01">
 						</div>
-						<h2><?=$value['titulo'];?></h2>
-						<p><?=$value['descripcion'];?></p>
-						<a class="more" href="#">ver más</a>
+						<div class="descripcion">
+							<h4><?=$value['precio'];?></h4>
+							<p><?=$value['descripcion'];?></p>
+						</div>
 					</article>
 			<?php endforeach;?>
-        </section>
-
-        <section class="productos">
+		</section>
+		
+		<p class="titulo-lista">Lista de productos</p>
+        <section class="col-md-12 col-sm-12 productos">
+			
 			<?php foreach ($articulos as $key => $value):?>
-					<article class="product">
+					<article class="product-card">
 						<div class="photo-container">
-							<img class="photo" src="images/<?= $value['imagen'];?>" alt="pdto 01">
-							<img class="special" src="images/img-nuevo.png" alt="plato nuevo">
-							<a class="zoom" href="#">Ampliar foto</a>
+							<img class="photo" src="images/catalogo/<?= $value['imagen'];?>" alt="pdto 01">
 						</div>
-						<h2><?=$value['titulo'];?></h2>
-						<p><?=$value['descripcion'];?></p>
-						<a class="more" href="#">ver más</a>
+						<div class="descripcion">
+							<h4><?=$value['precio'];?></h4>
+							<p><?=$value['descripcion'];?></p>
+						</div>
 					</article>
 			<?php endforeach;?>
-        </section>
+		</section>
+		
+		<p class="titulo-lista">Lista de productos</p>
 
-        <section class="productos">
+        <section class="col-md-12 col-sm-12 productos">
 			<?php foreach ($articulos as $key => $value):?>
-					<article class="product">
+					<article class="product-card">
 						<div class="photo-container">
-							<img class="photo" src="images/<?= $value['imagen'];?>" alt="pdto 01">
-							<img class="special" src="images/img-nuevo.png" alt="plato nuevo">
-							<a class="zoom" href="#">Ampliar foto</a>
+							<img class="photo" src="images/catalogo/<?= $value['imagen'];?>" alt="pdto 01">
 						</div>
-						<h2><?=$value['titulo'];?></h2>
-						<p><?=$value['descripcion'];?></p>
-						<a class="more" href="#">ver más</a>
+						<div class="descripcion">
+							<h4><?=$value['precio'];?></h4>
+							<p><?=$value['descripcion'];?></p>
+						</div>
+						
 					</article>
 			<?php endforeach;?>
         </section>
         
+		</div>
 
 		<!-- footer -  Aca ponemos las secciones raras como las preguntas y contactos, etc.-->		
 		

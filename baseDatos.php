@@ -2,35 +2,31 @@
 // Aca tenemos que poner los datos de los productos
 $articulos = [
 	0=>[
-		"imagen"=>"img-pdto-1.jpg",
-		"titulo"=>"HOla HOla",
-		"descripcion"=>"Eeeehhhhhh sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex."			
+		"imagen"=>"1b.png",
+		"precio"=>"$1400",
+		"descripcion"=>"Eeeehhhhhh sit amet."			
 	],
 	1=>[
-		"imagen"=>"img-pdto-2.jpg",
-		"titulo"=>"Lorem zxcbvhdfghgdhdfgh amet",
-		"descripcion"=>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex."			
+		"imagen"=>"2b.png",
+		"precio"=>"$1400",
+		"descripcion"=>"Lorem ipsum dolor sit amet."			
 	],
 	2=>[
-		"imagen"=>"img-pdto-3.jpg",
-		"titulo"=>"Lorem ipsum amet",
-		"descripcion"=>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex."			
+		"imagen"=>"3b.png",
+		"precio"=>"$1400",
+		"descripcion"=>"Lorem ipsum dolor sit amet."			
 	],
 	3=>[
-		"imagen"=>"img-pdto-3.jpg",
-		"titulo"=>"Lorem ipsum amet",
-		"descripcion"=>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex."			
+		"imagen"=>"4b.png",
+		"precio"=>"$1400",
+		"descripcion"=>"Lorem ipsum dolor sit amet ex."			
 	],
 	4=>[
-		"imagen"=>"img-pdto-3.jpg",
-		"titulo"=>"Lorem ipsum amet",
-		"descripcion"=>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex."			
+		"imagen"=>"5b.png",
+		"precio"=>"$1400",
+		"descripcion"=>"Lorem ipsum dolor sit amet officia ex."			
 	],
-	5=>[
-		"imagen"=>"img-pdto-3.jpg",
-		"titulo"=>"Lorem ipsum amet",
-		"descripcion"=>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex."			
-	]
+	
 ];
 
 
