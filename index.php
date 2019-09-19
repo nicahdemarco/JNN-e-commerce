@@ -58,10 +58,10 @@
 
 		<!-- seccion que va a decir metodos de pago y demas -->
         <section class="banner">
-			<div class="metodos"><i class="far fa-credit-card"></i>Tarjetas de crédito</div>
-			<div class="metodos"><i class="far fa-credit-card"></i>Tarjetas de débito</div>
-			<div class="metodos"><i class="fas fa-money-bill"></i>Efectivo y transferencia</div>
-			<div class="metodos"><i class="fas fa-shipping-fast"></i>Envíos a todo el país</div>
+			<div class="col-md-3 col-sm-12 col-xs-12 metodos"><i class="far fa-credit-card"></i>Tarjetas de crédito</div>
+			<div class="col-md-3 col-sm-12 col-xs-12 metodos"><i class="far fa-credit-card"></i>Tarjetas de débito</div>
+			<div class="col-md-3 col-sm-12 col-xs-12 metodos"><i class="fas fa-money-bill"></i>Efectivo y transferencia</div>
+			<div class="col-md-3 col-sm-12 col-xs-12 metodos"><i class="fas fa-shipping-fast"></i>Envíos a todo el país</div>
 		</section>
 
 		<!-- productos -->
