@@ -1,8 +1,8 @@
 @import "../CSS/navegador.css";
 @import "../CSS/index.css";
 @import "../CSS/footer.css";
+@import "../CSS/productos.css";
 
-/* cuando definamos las secciones ponemos los nombres */
 
 *{
     box-sizing: border-box;

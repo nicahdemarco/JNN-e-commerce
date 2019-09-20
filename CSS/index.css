@@ -1,7 +1,60 @@
 @import "../CSS/master.css";
 
+body{
+    background-color:#BDBDBD;
+    font-family: 'Lato',
+    sans-serif;
 
-.productos{
+}
+.container {
+    margin: 0 auto;
+}
+.carousel{
+    height:40vh;
+    width: 100%;
+    background-size:contain; 
+}
+.lala{
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+}
+.banner {
+    display: flex;
+    height: 70px;
+    border-radius:5px; 
+    background-color:white;
+    
+    margin: 2% 1% 2% 1%;
+}
+.metodos{
+    justify-content: space-around;
+    align-self: center;
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+}
+i{
+    padding: 2%;
+}
 
-    background-color: blue;
+.mails{
+    display: flex;
+    background-color: rgb(231, 140, 98);
+    height: 20vh;
+    margin: 0;
+    padding: 2%;
+    justify-content: center;
+    align-items:flex-start;
+
+}
+.susc{
+
+    justify-content: center;
+    align-self: center;
+}
+.input-group {
+    justify-content: center;
+    align-self: center;
+    margin: 1%;
 }
