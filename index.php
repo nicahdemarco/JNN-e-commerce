@@ -209,7 +209,6 @@
 		
 			<div class="pie">
 				<ul>
-				
 					<span class="mr-3">© 2018 Copyright</span>
 					<span class="mr-1"><a href="#">   Términos y Condiciones</a> |</span>
 					<span class="mr-1"><a href="#">Politicas de Privacidad</a> |</span>
