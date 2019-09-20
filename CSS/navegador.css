@@ -1,15 +1,42 @@
 @import "../CSS/master.css";
 
-.navbar{
-
-        width: 100%;
-    
+nav{
+    position: relative;
     
 }
 
-header{
+.Carrito{
 
-    padding-left: -15px;
-    padding-right: -15px;
+    position: absolute;
+    left: 87%;
+}
+
+.usuario{
+
+    position: absolute;
+    left: 83%;
+   
     
+}
+
+button{
+    margin:5px;
+    position: relative;
+    left: 40%;
+    
+}
+
+.buscador{
+
+    position: relative;
+    left: 30%;
+}
+
+.form-inline{
+    
+}
+
+.navbar-brand{
+    position: relative;
+    left: 10%;
 }
