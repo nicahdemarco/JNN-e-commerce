@@ -8,7 +8,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="https://kit.fontawesome.com/a27597434b.js" crossorigin="anonymous"></script>
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -198,7 +198,7 @@
 
 					<hr class="accent-2 mt-0 d-inline-block mx-auto" style="width: 60px;">
 
-					<li><a href="mailto:JNN-ecommerce@gmail.com" target="_blank"><i class="fas fa-envelope">  </i>  JNN-ecommerce@gmail.com</a></li>
+					<li><a href="mailto:consultas@jnncommerce.com.ar" target="_blank"><i class="fas fa-envelope">  </i>  consultas@jnncommerce.com.ar</a></li>
 					<li><a href="https://www.google.com.ar/maps/place/Av.+Monroe+860,+Buenos+Aires/@-34.5488518,-58.4458325,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcb436f18dc22f:0x36090a5d367889c6!8m2!3d-34.5488518!4d-58.4436438" target="_blank"><i class="fas fa-map-marker-alt">  </i>  Retira tu pedido por Belgrano (Capital Federal)</a></li>
 					<li><a href="tel:+54666666"><i class="fas fa-phone-square-alt">  +54 666 666</i></a></li>
 				</ul>
@@ -250,6 +250,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/a27597434b.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
