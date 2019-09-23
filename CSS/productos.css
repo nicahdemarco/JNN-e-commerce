@@ -1,7 +1,6 @@
 @import "../CSS/master.css";
 
 .contenedor-productos {
-    /* background-color: rgb(177, 120, 120); */
     padding: 0px;
 }
 
@@ -18,14 +17,12 @@
     margin-left: -75px;
 }
 .product-card {
-    /* flex-direction: row; */
-    /* align-items: center; */
+    
     min-width: 240px;
     height: 330px;
     margin: 1%;
     background-color: white;
     border-radius: 10px;
-    /* justify-content:space-around; */
 
 }
 .photo-container{

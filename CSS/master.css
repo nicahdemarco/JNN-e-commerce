@@ -1,7 +1,8 @@
-@import "../CSS/navegador.css";
 @import "../CSS/index.css";
-@import "../CSS/footer.css";
+@import "../CSS/navegador.css";
 @import "../CSS/productos.css";
+@import "../CSS/footer.css";
+
 
 
 *{

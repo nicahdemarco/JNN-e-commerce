@@ -1,3 +1,5 @@
+@import "../CSS/master.css";
+
 *{
     box-sizing: border-box;
     margin: 0 auto;
@@ -29,10 +31,14 @@ footer{
 
 .main-footer .redeslist ul span a i{
     text-decoration: none;
-    color: black;
+    color: #212121;
 }
 
 .main-footer .metodlist{
     text-align: center;
 }
 
+.logos {
+    width: 40px;
+    
+}

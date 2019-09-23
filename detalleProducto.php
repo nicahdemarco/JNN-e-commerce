@@ -1,4 +1,4 @@
-<?php 
+<?php require_once('baseDatos.php');
 
 ?>
 <!-- esto esta linkeado para mas adelante -->
@@ -63,7 +63,9 @@
 
 		</div>
 
-		<!-- footer -  Aca ponemos las secciones raras como las preguntas y contactos, etc.-->		
+            <!-- footer -  Aca ponemos las secciones raras como las preguntas y contactos, etc.-->
+            <?php require_once('footer.php'); ?>
+
 		</div>
 	</body>
 </html>
