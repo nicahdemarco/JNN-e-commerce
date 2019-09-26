@@ -1,0 +1,13 @@
+@import "../CSS/master.css";
+
+.faq{
+    padding: 20px;
+}
+
+.tituloFaq{
+    text-align: center; 
+}
+
+.pagos{
+    margin-left: 15px;
+}
