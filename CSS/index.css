@@ -1,4 +1,3 @@
-@import "../CSS/master.css";
 
 body{
     background-color:#BDBDBD;
@@ -91,6 +90,7 @@ i{
     background-size: cover;
     height: 50%;
     padding: 2%;
+    margin-bottom: 1%;
 
 }
 .promo3 {

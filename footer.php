@@ -1,9 +1,7 @@
-<div class="container-fluid">
-
-	<footer class="main-footer row">
+<footer class="col-md-12 main-footer row">
 	<hr class="mt-0 d-inline-block mx-auto " style="width:95%;">
 		<div>
-			<ul class="redeslist">
+			<ul class="col-md-12 redeslist">
 				<li><h5>REDES SOCIALES</h5></li>
 
 				<li><hr class="accent-2 mt-0 d-inline-block mx-auto" style="width: 60px;"></li>
@@ -15,7 +13,7 @@
 		</div>
 
 		<div>
-			<ul class="metodlist">
+			<ul class="col-md-12 metodlist">
 				<li><h5>METODOS DE PAGO</h5></li>
 
 				<li><hr class="accent-2 mt-0 d-inline-block mx-auto" style="width: 60px;"></li>
@@ -28,7 +26,7 @@
 		</div>
 
 		<div>
-			<ul class="envioslist">
+			<ul class="col-md-12 envioslist">
 				<li><h5>ENVIOS</h5></li>
 				<li><hr class="accent-2 mt-0 d-inline-block mx-auto" style="width: 60px;"></li>
 
@@ -39,7 +37,7 @@
 		</div>
 
 		<div>
-			<ul class="contactlist">
+			<ul class="col-md-12 contactlist">
 				<li><h5>CONTACTO</h5></li>
 
 				<hr class="accent-2 mt-0 d-inline-block mx-auto" style="width: 60px;">
@@ -62,6 +60,3 @@
 			</ul>
 		</div>
 	</footer>	
-		
-</div>
-

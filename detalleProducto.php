@@ -5,68 +5,75 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> 
-	<link rel="stylesheet" href="CSS/master.css">
-    <title>JNN-e-commerce</title>
-</head>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="CSS/master.css">
+        <title>JNN-e-commerce</title>
+    </head>
 
-    <div class="container-fluid">
+    <body>
+        <div class="container-fluid">
+            <header class="main-header">
 
-        <header class="main-header">
 
-        </header>
-	
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-                    <li class="breadcrumb-item"><a href="#">Remeras</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Data</li>
-                </ol>
-            </nav>
-
-		<!-- producto -->
-		<div class="container contenedor-producto">
-			<!-- <span class="titulo-lista">
-				Lista de productos
-			</span> -->
-            <section class="col-md-12 col-sm-12 producto-imagenes">
-                
-                <?php foreach ($articulos as $key => $value):?>
-                        <article class="product-card">
-                            <div class="photo-container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">remera</li>
+                    </ol>
+                </nav>
+            </header>
+        
+            <!-- producto -->
+            <div class="container detalle-container">
+                <div class="row">
+                    <section class="detalle-producto">
+                    
+                        <article class="col-md-8 col-sm-12 detalle-image">
+                            <!-- <div class="photo-container">
                                 <img class="photo" src="images/catalogo/<?= $value['imagen'];?>" alt="pdto 01">
                             </div>
                             <div class="descripcion">
                                 <h4><?=$value['precio'];?></h4>
                                 <p><?=$value['descripcion'];?></p>
-                            </div>
+                            </div> -->
+                            <!-- <img class="phwo" src="./images/catalogo/IMG_25.jpeg.png" alt="o 01"> -->
                         </article>
-                <?php endforeach;?>
 
+                        <aside class="col-md-4 col-sm-12 detalle-descripcion">
+                            <h3 class="title">Remera blanca</h3>
+                            <h3 class="title">Precio:</h3>
+                            <p class="texto-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus exercitationem, beatae quo quibusdam ipsa repudiandae possimus aperiam unde nam?
+                            </p>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">S<label>
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">M<label>
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">L<label>
+                            </div>
+                            <div class="row d-flex botones">
+                                <input class="btn btn-primary" type="submit" value="Comprar">
+                                <input class="btn btn-primary" type="submit" value="Agregar al carrito">  
+                            </div>
+                        </aside>
 
-            </section>
-            <aside class="detalle">
+                    </section>
+                </div>
+            </div>
 
-            </aside>
-            <article class="descripcion">
-
-            </article>
-
-		</div>
-
-            <!-- footer -  Aca ponemos las secciones raras como las preguntas y contactos, etc.-->
             <?php require_once('footer.php'); ?>
 
-		</div>
+        </div>
 	</body>
 </html>
 

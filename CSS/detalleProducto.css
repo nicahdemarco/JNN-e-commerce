@@ -1,15 +1,38 @@
-@import "../CSS/master.css";
 
-.contenedor-producto {
+.detalle-container {
+    background-color: aqua;
+    /* display: flex; */
+    height: 80vh;
+    justify-content: space-around;
+}
+
+.detalle-producto {
+    background-color: rgb(255, 174, 0);
+    height: 80vh;
+    display: flex;
+
+}
+.detalle-image {
+    height: 60vh;
+    margin: 1%;
+    background-color: white;
+    justify-content: flex-start;
+    border-radius: 10px;
+    width: 100%;
     
 }
 
-.detalle{
-
-
+.detalle-descripcion {
+    background-color: rgb(223, 57, 181);
+    height: 80vh;
+    justify-content: flex-end;
+    padding: 2%;
+    width: 100%;
 }
-
-.descripcion{
-
-    
+.botones{
+    justify-content: center;
+    margin: 1%;
+    align-items: flex-end
+}
+.btn{
 }

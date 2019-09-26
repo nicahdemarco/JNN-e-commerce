@@ -107,58 +107,62 @@ require_once('baseDatos.php');
 
 		<!-- productos -->
 		<div class="container contenedor-productos">
+			
 			<p class="titulo-lista">Lista de productos 1</p>
-		<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 productos">
+			<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 productos">
+				
+				<?php foreach ($articulos as $key => $value):?>
+						<article class="col-xs-12 product-card">
+							<a href="detalleProducto.php">
+								<div class="photo-container">
+									<img class="photo" src="images/catalogo/<?= $value['imagen'];?>" alt="pdto 01">
+								</div>
+								<div class="descripcion">
+									<h4><?=$value['precio'];?></h4>
+									<p><?=$value['descripcion'];?></p>
+								</div>
+							</a>
+						</article>
+				<?php endforeach;?>
+			</section>
+		
+			<p class="titulo-lista">Lista de productos 2</p>
+			<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 productos">
+				
+				<?php foreach ($articulos2 as $key => $value):?>
+						<article class="col-xs-12 product-card">
+							<a href="detalleProducto.php">
+								<div class="photo-container">
+									<img class="photo" src="images/catalogo/<?= $value['imagen'];?>" alt="pdto 01">
+								</div>
+								<div class="descripcion">
+									<h4><?=$value['precio'];?></h4>
+									<p><?=$value['descripcion'];?></p>
+								</div>
+							</a>
+						</article>
+				<?php endforeach;?>
+			</section>
 			
-			<?php foreach ($articulos as $key => $value):?>
-					<article class="col-xs-12 product-card">
-						<div class="photo-container">
-							<img class="photo" src="images/catalogo/<?= $value['imagen'];?>" alt="pdto 01">
-						</div>
-						<div class="descripcion">
-							<h4><?=$value['precio'];?></h4>
-							<p><?=$value['descripcion'];?></p>
-						</div>
-					</article>
-			<?php endforeach;?>
-		</section>
+			<p class="titulo-lista">Lista de productos 3</p>
+			<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 productos">
+				<?php foreach ($articulos3 as $key => $value):?>
+						<article class="col-xs-12 product-card">
+							<a href="detalleProducto.php">
+								<div class="photo-container">
+									<img class="photo" src="images/catalogo/<?= $value['imagen'];?>" alt="pdto 01">
+								</div>
+								<div class="descripcion">
+									<h4><?=$value['precio'];?></h4>
+									<p><?=$value['descripcion'];?></p>
+								</div>
+							</a>
+						</article>
+				<?php endforeach;?>
+			</section>
 		
-		<p class="titulo-lista">Lista de productos 2</p>
-        <section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 productos">
-			
-			<?php foreach ($articulos2 as $key => $value):?>
-					<article class="col-xs-12 product-card">
-						<div class="photo-container">
-							<img class="photo" src="images/catalogo/<?= $value['imagen'];?>" alt="pdto 01">
-						</div>
-						<div class="descripcion">
-							<h4><?=$value['precio'];?></h4>
-							<p><?=$value['descripcion'];?></p>
-						</div>
-					</article>
-			<?php endforeach;?>
-		</section>
-		
-		<p class="titulo-lista">Lista de productos 3</p>
-
-        <section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 productos">
-			<?php foreach ($articulos3 as $key => $value):?>
-					<article class="col-xs-12 product-card">
-						<div class="photo-container">
-							<img class="photo" src="images/catalogo/<?= $value['imagen'];?>" alt="pdto 01">
-						</div>
-						<div class="descripcion">
-							<h4><?=$value['precio'];?></h4>
-							<p><?=$value['descripcion'];?></p>
-						</div>
-						
-					</article>
-			<?php endforeach;?>
-		</section>
-		
-		
-        
 		</div>
+		
 		<section class="col-md-12 w-100 mails">
 			<h3 class="susc">subscribite para recibir novedades</h3>
 			<div class="input-group mb-3">
@@ -190,7 +194,7 @@ require_once('baseDatos.php');
 
 		<?php require_once('footer.php'); ?>
 		
-		</div>
+	</div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
