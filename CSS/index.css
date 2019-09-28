@@ -1,8 +1,7 @@
 
 body{
     background-color:#BDBDBD;
-    font-family: 'Lato',
-    sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #212121;
 
 }
@@ -67,11 +66,9 @@ i{
 .promos{
     display: flex;
     margin: 5% 0 5% 0;
-    /* background-color: blueviolet; */
     height: 50vh;
 }
 .promo-content{
-    /* background-color: yellow; */
     padding: 2%;
 }
 .promo1{
@@ -85,8 +82,9 @@ i{
 }
 .promo2 {
     background-color: rgb(27, 8, 199);
-    background-image: url(../images/catalogo/IMG_24.jpeg);
+    background-image: url(../images/faqs.jpg);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     height: 50%;
     padding: 2%;
@@ -96,7 +94,7 @@ i{
 .promo3 {
     height: 50%;
     background-color: rgb(27, 226, 21);
-    background-image: url(../images/catalogo/IMG_25.jpeg);
+    /* background-image: url(../images/catalogo/IMG_25.jpeg); */
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 1%;

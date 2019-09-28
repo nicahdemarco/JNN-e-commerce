@@ -1,43 +1,23 @@
-
-*{
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 0;
-}
-
 footer{
     display: flex;
     justify-content: space-around;
     width: 100%;
-    font-size: 14px;    
+    font-size: 14px; 
+    background-color: #FFE0B2;
+    padding: 0;
+}
+.main-footer{
+    padding-top: 3%;
 }
 
-.main-footer div ul li h5{
-    font-size: 16px;
-}
-
-.main-footer ul li{
+.lista {
+    text-align: center;
+    text-decoration: none;
     list-style-type: none;
+
 }
 
-.main-footer ul li a{
-    text-decoration: none;
-}
-
-.main-footer .envioslist{
-    text-align: center;
-}
-
-.main-footer .redeslist ul span a i{
-    text-decoration: none;
-    color: #212121;
-}
-
-.main-footer .metodlist{
-    text-align: center;
-}
-
-.logos {
-    width: 40px;
-    
+.contactlist_item{
+    text-align: left;
+    padding: 0;
 }

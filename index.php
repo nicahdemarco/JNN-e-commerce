@@ -1,6 +1,5 @@
 <?php 
 require_once('baseDatos.php');
-// require_once('navbar.php');
 
 ?>
 
@@ -21,79 +20,50 @@ require_once('baseDatos.php');
 <div class="container-fluid">
 		
 	<header class="main-header">
-
-		<nav class="navbar navbar-expand-lg w-100 ">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-					<a class="navbar-brand" href="#">
-						<img src="img-proyecto/tshirt.png" wihgt="40" height="40" alt="" >
-						JNN
-					</a>
-
-					<form class="form-inline my-2 my-lg-0 ">
-					<input class="form-control mr-sm-2" type="search" placeholder="buscar" aria-label="Search">
-					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-					</form>
-
-					<ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
-						<li class="nav-item ">
-							<a class="nav-link" href="#">Crear cuenta<span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Ingresar</a>
-						</li>
-					</ul>
-					
-					<a class="Carrito de Compras" href="#">
-					<img src="img-proyecto/añadir-al-carrito.png" wight="40" height="40" alt="">
-					</a>
-				</div> 
-		</nav>
+		<?php require_once('navbar.php'); ?>
 	
 	</header>
 	
 		<section class="carousel">
 
-		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-			</ol>
-			<div class="carousel-inner">
-				<div class="carousel-item active" style="background-image:url(img-proyecto/tshirt3.jpg);">
-					<img src="../JNN-e-commerce/images/tshirt3.jpg" class="d-block w-100 lala" alt="...">
-					<div class="carousel-caption d-none d-md-block">
-						<h2>Third slide label</h2>
-						<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-					</div>	
-				</div>
-				<div class="carousel-item" style="background-image:url(img-proyecto/tshirt4.png);">
-					<img src="../JNN-e-commerce/images/tshirt4.png" class="d-block w-100 lala" alt="...">
-					<div class="carousel-caption d-none d-md-block">
-						<h2>Third slide label</h2>
-						<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active" style="background-image:url(img-proyecto/tshirt3.jpg);">
+						<img src="../JNN-e-commerce/images/tshirt3.jpg" class="d-block w-100 lala" alt="...">
+						<div class="carousel-caption d-none d-md-block">
+							<h2>Third slide label</h2>
+							<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+						</div>	
+					</div>
+					<div class="carousel-item" style="background-image:url(img-proyecto/tshirt4.png);">
+						<img src="../JNN-e-commerce/images/tshirt4.png" class="d-block w-100 lala" alt="...">
+						<div class="carousel-caption d-none d-md-block">
+							<h2>Third slide label</h2>
+							<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="../JNN-e-commerce/images/tshirt1.png" class="d-block w-100 lala" alt="...">
+						<div class="carousel-caption d-none d-md-block">
+							<h2>Third slide label</h2>
+							<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+						</div>
 					</div>
 				</div>
-				<div class="carousel-item">
-					<img src="../JNN-e-commerce/images/tshirt1.png" class="d-block w-100 lala" alt="...">
-					<div class="carousel-caption d-none d-md-block">
-						<h2>Third slide label</h2>
-						<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-					</div>
-				</div>
+				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
 			</div>
-			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
-		</div>
 
         </section>
 
@@ -107,7 +77,7 @@ require_once('baseDatos.php');
 
 		<!-- productos -->
 		<div class="container contenedor-productos">
-			
+
 			<p class="titulo-lista">Lista de productos 1</p>
 			<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 productos">
 				
@@ -181,10 +151,11 @@ require_once('baseDatos.php');
 			</div>
 
 			<div class="col-md-6 col-sm-12 promo-content">
-				<article class="promo2">
-					<h2>promo2</h2>
+				<a href="FAQ.php">
+					<article class="promo2">
+					<h2>FAQ's <br>Preguntas frecuentes</h2>
 				</article>
-
+				</a>
 				<article class="promo3">
 					<h2>promo3</h2>
 				</article>
@@ -192,7 +163,7 @@ require_once('baseDatos.php');
 
 		</section>
 
-		<?php require_once('footer.php'); ?>
+		<?php require_once('footer.php');?>
 		
 	</div>
 

@@ -50,11 +50,11 @@ $articulos2 = [
 		"precio"=>"$1400",
 		"descripcion"=>"Lorem ipsum dolor sit amet ex."			
 	],
-	4=>[
-		"imagen"=>"IMG_10.jpeg",
-		"precio"=>"$1400",
-		"descripcion"=>"Lorem ipsum dolor sit amet officia ex."			
-	],
+	// 4=>[
+	// 	"imagen"=>"IMG_10.jpeg",
+	// 	"precio"=>"$1400",
+	// 	"descripcion"=>"Lorem ipsum dolor sit amet officia ex."			
+	// ],
 	
 ];
 
@@ -79,11 +79,11 @@ $articulos3 = [
 		"precio"=>"$1400",
 		"descripcion"=>"Lorem ipsum dolor sit amet ex."			
 	],
-	4=>[
-		"imagen"=>"IMG_15.jpeg",
-		"precio"=>"$1400",
-		"descripcion"=>"Lorem ipsum dolor sit amet officia ex."			
-	],
+	// 4=>[
+	// 	"imagen"=>"IMG_15.jpeg",
+	// 	"precio"=>"$1400",
+	// 	"descripcion"=>"Lorem ipsum dolor sit amet officia ex."			
+	// ],
 	
 ];
 

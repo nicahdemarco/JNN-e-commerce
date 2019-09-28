@@ -1,5 +1,8 @@
-@import "../CSS/master.css";
-
+/* *{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+} */
 .faq{
     padding: 20px;
 }
@@ -8,6 +11,6 @@
     text-align: center; 
 }
 
-.pagos{
+.response{
     margin-left: 15px;
 }
