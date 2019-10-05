@@ -36,22 +36,22 @@ require_once('helpers.php');
 					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 				</ol>
 				<div class="carousel-inner">
-					<div class="carousel-item active" style="background-image:url(img-proyecto/carrusek1.jpg);">
-						<img src="../JNN-e-commerce/images/carrusel1.jpg" class="d-block w-100 lala" alt="...">
+					<div class="carousel-item active">
+						<img src="../JNN-e-commerce/images/tshirt4.png" class="d-block w-100 lala" alt="...">
 						<div class="carousel-caption d-none d-md-block">
 							<h2>Third slide label</h2>
 							<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
 						</div>	
 					</div>
-					<div class="carousel-item" style="background-image:url(img-proyecto/carrusek.jpeg);">
-						<img src="../JNN-e-commerce/images/carrusel2.jpeg" class="d-block w-100 lala" alt="...">
+					<div class="carousel-item">
+						<img src="../JNN-e-commerce/images/tshirt3.jpg" class="d-block w-100 lala" alt="...">
 						<div class="carousel-caption d-none d-md-block">
 							<h2>Third slide label</h2>
 							<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
 						</div>
 					</div>
 					<div class="carousel-item">
-						<img src="../JNN-e-commerce/images/carrusel3.jpg" class="d-block w-100 lala" alt="...">
+						<img src="../JNN-e-commerce/images/tshirt1.png" class="d-block w-100 lala" alt="...">
 						<div class="carousel-caption d-none d-md-block">
 							<h2>Third slide label</h2>
 							<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>

@@ -1,6 +1,14 @@
 
 .navbar{
-  
-    background-color:#FFE0B2;
+    display: flex;
+    background-color:rgb(231, 140, 98);
+    -webkit-box-shadow: 0px 9px 10px -10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 9px 10px -10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 9px 10px -10px rgba(0, 0, 0, 0.5);
+}
+
+#navbarToggler{
+    margin: 0 24px 0 24px;
+    justify-content: space-around;
 
 }

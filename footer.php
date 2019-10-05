@@ -41,8 +41,8 @@
 
 				<hr class="accent-2 mt-0 d-inline-block mx-auto" style="width: 60px;">
 				<li class="contactlist_item"><a href="FAQ.php" target=""><i class="fas fa-question"></i>Preguntas frecuentes</a></li>
-				<li class="contactlist_item"><a href="mailto:consultas@jnncommerce.com.ar" target="_blank"><i class="fas fa-envelope"></i>consultas@jnncommerce.com.ar</a></li>
-				<li class="contactlist_item"><a href="https://www.google.com.ar/maps/place/Av.+Monroe+860,+Buenos+Aires/@-34.5488518,-58.4458325,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcb436f18dc22f:0x36090a5d367889c6!8m2!3d-34.5488518!4d-58.4436438" target="_blank"><i class="fas fa-map-marker-alt">  </i>Retira por Belgrano (CABA)</a></li>
+				<li class="contactlist_item"><a href="mailto:consultas@jnn.com.ar" target="_blank"><i class="fas fa-envelope"></i>consultas@jnn.com.ar</a></li>
+				<li class="contactlist_item"><a href="https://www.google.com.ar/maps/place/Av.+Monroe+860,+Buenos+Aires/@-34.5488518,-58.4458325,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcb436f18dc22f:0x36090a5d367889c6!8m2!3d-34.5488518!4d-58.4436438" target="_blank"><i class="fas fa-map-marker-alt"> </i>Belgrano (CABA)</a></li>
 				<li class="contactlist_item"><a href="tel:+54666666"><i class="fas fa-phone-square-alt">  +54 666 666</i></a></li>
 			</ul>
 		</div>
