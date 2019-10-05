@@ -130,7 +130,7 @@ require_once('baseDatos.php');
 						</article>
 				<?php endforeach;?>
 			</section>
-		dsfHL?Msr/kfhnf,.hndbhk.jbfgd,.hsmdbhjbh.sd.j
+		
 		</div>
 		
 		<section class="col-md-12 w-100 mails">
@@ -153,7 +153,7 @@ require_once('baseDatos.php');
 			<div class="col-md-6 col-sm-12 promo-content">
 				<a href="FAQ.php">
 					<article class="promo2">
-					<h2>FAQ's <br>Preguntas frecuentes</h2>
+					<h2>FAQ's <br>Preguntas</h2>
 				</article>
 				</a>
 				<article class="promo3">
