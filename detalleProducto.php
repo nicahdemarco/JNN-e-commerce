@@ -20,7 +20,6 @@
         <div class="container-fluid">
             <header class="main-header">
                 <?php require_once('navbar.php');?>
-
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb bg-transparent">
                         <li class="breadcrumb-item"><a href="index.php">Inicio</a></li>
@@ -30,11 +29,11 @@
             </header>
         
             <!-- producto -->
-            <div class="container detalle-container">
+            <div class="container detalle-container ">
                 <div class="row">
                     <section class="detalle-producto">
                     
-                        <article class="col-md-8 col-sm-12 detalle-image">
+                        <article class="col-md-6 col-sm-12 col-xs-12 detalle-imagen">
                             <!-- <div class="photo-container">
                                 <img class="photo" src="images/catalogo/<?= $value['imagen'];?>" alt="pdto 01">
                             </div>
@@ -45,23 +44,43 @@
                             <!-- <img class="phwo" src="./images/catalogo/IMG_25.jpeg.png" alt="o 01"> -->
                         </article>
 
-                        <aside class="col-md-4 col-sm-12 detalle-descripcion">
+                        <aside class="col-md-6 col-sm-12 col-xs-12 detalle-descripcion">
                             <h3 class="title">Remera blanca</h3>
-                            <h3 class="title">Precio:</h3>
+                            <h2 class="price">Precio: $1400</h2>
                             <p class="texto-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus exercitationem, beatae quo quibusdam ipsa repudiandae possimus aperiam unde nam?
                             </p>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label" for="customCheck1">S<label>
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label" for="customCheck1">M<label>
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label" for="customCheck1">L<label>
+                            <div class="select">TALLE</div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">S</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">M</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">L</label>
+                            </div>
+                            
+                            <div class="select">COLOR</div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">S</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">M</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">L</label>
                             </div>
                             <div class="row d-flex botones">
-                                <input class="btn btn-primary" type="submit" value="Comprar">
-                                <input class="btn btn-primary" type="submit" value="Agregar al carrito">  
+                                <input class="btn btn-primary" type="submit" value="Agregar al carrito">
+                                <input class="btn btn-primary" type="submit" value="Comprar">  
                             </div>
+                            
                         </aside>
 
                     </section>
