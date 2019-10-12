@@ -44,7 +44,7 @@ require_once('helpers.php');
 						</div>	
 					</div>
 					<div class="carousel-item">
-						<img src="../JNN-e-commerce/images/tshirt3.jpg" class="d-block w-100 lala" alt="...">
+						<img src="../JNN-e-commerce/images/tshirt3.png" class="d-block w-100 lala" alt="...">
 						<div class="carousel-caption d-none d-md-block">
 							<h2>Third slide label</h2>
 							<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -80,8 +80,6 @@ require_once('helpers.php');
 
 		<!-- productos -->
 		<div class="container contenedor-productos">
-
-			<p class="titulo-lista">Lista de productos 1</p>
 			<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 productos">
 				
 				<?php foreach ($articulos as $key => $value):?>
@@ -99,7 +97,6 @@ require_once('helpers.php');
 				<?php endforeach;?>
 			</section>
 		
-			<p class="titulo-lista">Lista de productos 2</p>
 			<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 productos">
 				
 				<?php foreach ($articulos2 as $key => $value):?>
@@ -117,7 +114,6 @@ require_once('helpers.php');
 				<?php endforeach;?>
 			</section>
 			
-			<p class="titulo-lista">Lista de productos 3</p>
 			<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 productos">
 				<?php foreach ($articulos3 as $key => $value):?>
 						<article class="col-xs-12 product-card">
@@ -156,7 +152,7 @@ require_once('helpers.php');
 			<div class="col-md-6 col-sm-12 promo-content">
 				<a href="FAQ.php">
 					<article class="promo2">
-					<h2>FAQ's <br>Preguntas</h2>
+					<h2>FAQ's <br>Preguntas frecuentes</h2>
 				</article>
 				</a>
 				<article class="promo3">
@@ -166,8 +162,8 @@ require_once('helpers.php');
 
 		</section>
 
-		<?php require_once('footer.php');?>
 		
+		<?php require_once("footer.php");?>
 	</div>
 
 

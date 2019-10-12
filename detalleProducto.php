@@ -22,7 +22,7 @@
                 <?php require_once('navbar.php');?>
 
                 <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
+                    <ol class="breadcrumb bg-transparent">
                         <li class="breadcrumb-item"><a href="index.php">Inicio</a></li>
                         <li class="breadcrumb-item active" aria-current="page">remeras</li>
                     </ol>

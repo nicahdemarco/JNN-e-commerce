@@ -48,7 +48,6 @@
 		</div>
 		
 		<hr class="mt-0 d-inline-block mx-auto " style="width:95%;">
-
 	
 		<div class="pie">
 			<ul>

@@ -17,16 +17,10 @@ $articulos = [
 		"descripcion"=>"Lorem ipsum dolor sit amet."			
 	],
 	3=>[
-		"imagen"=>"IMG_4.jpg",
+		"imagen"=>"IMG_12.jpg",
 		"precio"=>"$1400",
 		"descripcion"=>"Lorem ipsum dolor sit amet ex."			
-	],
-	// 4=>[
-	// 	"imagen"=>"IMG_5.jpg",
-	// 	"precio"=>"$1400",
-	// 	"descripcion"=>"Lorem ipsum dolor sit amet officia ex."			
-	// ],
-	
+	],	
 ];
 
 $articulos2 = [
@@ -36,26 +30,20 @@ $articulos2 = [
 		"descripcion"=>"Eeeehhhhhh sit amet."			
 	],
 	1=>[
-		"imagen"=>"IMG_7.jpg",
+		"imagen"=>"IMG_14.jpeg",
 		"precio"=>"$1400",
 		"descripcion"=>"Lorem ipsum dolor sit amet."			
 	],
 	2=>[
-		"imagen"=>"IMG_8.jpeg",
+		"imagen"=>"IMG_16.jpeg",
 		"precio"=>"$1400",
 		"descripcion"=>"Lorem ipsum dolor sit amet."			
 	],
 	3=>[
-		"imagen"=>"IMG_9.jpeg",
+		"imagen"=>"IMG_17.jpeg",
 		"precio"=>"$1400",
 		"descripcion"=>"Lorem ipsum dolor sit amet ex."			
 	],
-	// 4=>[
-	// 	"imagen"=>"IMG_10.jpeg",
-	// 	"precio"=>"$1400",
-	// 	"descripcion"=>"Lorem ipsum dolor sit amet officia ex."			
-	// ],
-	
 ];
 
 $articulos3 = [
@@ -65,7 +53,7 @@ $articulos3 = [
 		"descripcion"=>"Eeeehhhhhh sit amet."			
 	],
 	1=>[
-		"imagen"=>"IMG_12.jpg",
+		"imagen"=>"IMG_9.jpeg",
 		"precio"=>"$1400",
 		"descripcion"=>"Lorem ipsum dolor sit amet."			
 	],
@@ -75,16 +63,10 @@ $articulos3 = [
 		"descripcion"=>"Lorem ipsum dolor sit amet."			
 	],
 	3=>[
-		"imagen"=>"IMG_14.jpeg",
+		"imagen"=>"IMG_18.jpeg",
 		"precio"=>"$1400",
 		"descripcion"=>"Lorem ipsum dolor sit amet ex."			
 	],
-	// 4=>[
-	// 	"imagen"=>"IMG_15.jpeg",
-	// 	"precio"=>"$1400",
-	// 	"descripcion"=>"Lorem ipsum dolor sit amet officia ex."			
-	// ],
-	
 ];
 
 ?>

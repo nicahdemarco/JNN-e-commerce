@@ -11,7 +11,7 @@ require_once('helpers.php');
         
         <div class="collapse navbar-collapse" id="navbarToggler">
             <a class="navbar-brand" href="#">
-                <img src="images/tshirt.png" width="40" height="40" alt="" > JNN
+                <img src="images/tshirt.png" width="40" height="40" alt="logo" >
             </a>
             
             <div class="input-group mb-3">
@@ -19,7 +19,7 @@ require_once('helpers.php');
             </div>
             
                                 
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#registro">
+                        <button type="button" class="btn btn-info btn_nav" data-toggle="modal" data-target="#registro">
                         Crear cuenta
                         <?php require_once('registro.php'); ?>
                         </button>
@@ -76,7 +76,7 @@ require_once('helpers.php');
                         </div>
                         </div>
 
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#cuenta">
+                        <button type="button" class="btn btn-info  btn_nav" data-toggle="modal" data-target="#cuenta">
                         Ingresar
                         <?php require_once('login.php'); ?>
                         </button>
@@ -124,7 +124,7 @@ require_once('helpers.php');
                         </div>
             
             <a class="carrito-de-compras" href="#">
-                <img src="images/carro-de-la-compra.png" width="40" height="40" alt="carrito de compras"> 
+                <img src="images/tcart.png" width="40" height="40" data-toggle="tooltip" data-placement="top" title="Carrito de compras" alt="carrito de compras"> 
             </a>
         </div> 
     </nav>

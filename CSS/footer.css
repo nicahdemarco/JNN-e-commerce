@@ -3,11 +3,12 @@ footer{
     justify-content: space-around;
     width: 100%;
     font-size: 14px; 
-    background-color: #FFE0B2;
+    background-color: #FFC107;
     padding: 0;
 }
 .main-footer{
     padding-top: 3%;
+    margin: 0;
 }
 
 .lista {
