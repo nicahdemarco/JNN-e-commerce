@@ -37,24 +37,30 @@ require_once('helpers.php');
 				</ol>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img src="../JNN-e-commerce/images/tshirt4.png" class="d-block w-100 lala" alt="...">
+						<img src="../JNN-e-commerce/images/tshirt4.png" class="d-block w-100 lala" alt="">
 						<div class="carousel-caption d-none d-md-block">
-							<h2>Third slide label</h2>
-							<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+							<a href="#productos1">
+								<h2>NUEVA COLECCION</h2>
+								<p>Mira nuestra nueva coleccion...</p>
+							</a>
 						</div>	
 					</div>
 					<div class="carousel-item">
 						<img src="../JNN-e-commerce/images/tshirt3.png" class="d-block w-100 lala" alt="...">
 						<div class="carousel-caption d-none d-md-block">
-							<h2>Third slide label</h2>
-							<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+							<a href="#productos2">
+								<h2>NUEVA COLECCION</h2>
+								<p>Mira nuestra nueva coleccion...</p>
+							</a>
 						</div>
 					</div>
 					<div class="carousel-item">
-						<img src="../JNN-e-commerce/images/tshirt1.png" class="d-block w-100 lala" alt="...">
+						<img src="../JNN-e-commerce/images/tshirt1.png" class="d-block w-100 lala" alt="nueva coleccion">
 						<div class="carousel-caption d-none d-md-block">
-							<h2>Third slide label</h2>
-							<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+							<a href="#productos3">
+								<h2>NUEVA COLECCION</h2>
+								<p>Mira nuestra nueva coleccion...</p>
+							</a> 
 						</div>
 					</div>
 				</div>
@@ -80,7 +86,7 @@ require_once('helpers.php');
 
 		<!-- productos -->
 		<div class="container contenedor-productos">
-			<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 productos">
+			<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 productos" id="productos1">
 				
 				<?php foreach ($articulos as $key => $value):?>
 						<article class="col-xs-12 product-card">
@@ -97,7 +103,7 @@ require_once('helpers.php');
 				<?php endforeach;?>
 			</section>
 		
-			<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 productos">
+			<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 productos" id="productos2">
 				
 				<?php foreach ($articulos2 as $key => $value):?>
 						<article class="col-xs-12 product-card">
@@ -114,7 +120,7 @@ require_once('helpers.php');
 				<?php endforeach;?>
 			</section>
 			
-			<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 productos">
+			<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 productos" id="productos3">
 				<?php foreach ($articulos3 as $key => $value):?>
 						<article class="col-xs-12 product-card">
 							<a href="detalleProducto.php">
@@ -152,7 +158,7 @@ require_once('helpers.php');
 			<div class="col-md-6 col-sm-12 promo-content">
 				<a href="FAQ.php">
 					<article class="promo2">
-					<h2>FAQ's <br>Preguntas frecuentes</h2>
+					<h2>FAQ's<br>Preguntas frecuentes</h2>
 				</article>
 				</a>
 				<article class="promo3">
@@ -161,12 +167,11 @@ require_once('helpers.php');
 			</div>
 
 		</section>
-
 		
 		<?php require_once("footer.php");?>
 	</div>
 
-
+	<script src="./main.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

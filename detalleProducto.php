@@ -1,7 +1,6 @@
 <?php require_once('baseDatos.php');
 
 ?>
-<!-- esto esta linkeado para mas adelante -->
 <!doctype html>
 <html lang="en">
 
@@ -27,11 +26,10 @@
                     </ol>
                 </nav>
             </header>
-        
             <!-- producto -->
             <div class="container detalle-container ">
                 <div class="row">
-                    <section class="detalle-producto">
+                    <section class="detalle-producto d-xs-flex">
                     
                         <article class="col-md-6 col-sm-12 col-xs-12 detalle-imagen">
                             <!-- <div class="photo-container">
@@ -42,40 +40,53 @@
                                 <p><?=$value['descripcion'];?></p>
                             </div> -->
                             <!-- <img class="phwo" src="./images/catalogo/IMG_25.jpeg.png" alt="o 01"> -->
+                            <div class="row d-flex botones">
+                                <input class="btn btn-primary" type="submit" value="Continuar comprando">
+                            </div>
                         </article>
 
                         <aside class="col-md-6 col-sm-12 col-xs-12 detalle-descripcion">
                             <h3 class="title">Remera blanca</h3>
-                            <h2 class="price">Precio: $1400</h2>
+                            <h2 class="price">$1400</h2>
+                            <h3 class="frase">Frase: ipsum dolor sit amet co blanca</h3>
                             <p class="texto-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus exercitationem, beatae quo quibusdam ipsa repudiandae possimus aperiam unde nam?
                             </p>
                             <div class="select">TALLE</div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                <label class="form-check-label" for="inlineCheckbox1">S</label>
+                            <div class="d-flex mb-4">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">S</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">M</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">L</label>
+                                </div>
+                                </div>
+                            <div class="select">COLOR</div>
+                            <div class="d-flex mb-4">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="BLANCO">
+                                    <label class="form-check-label" for="inlineCheckbox1">BLANCO</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                <label class="form-check-label" for="inlineCheckbox2">M</label>
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="NEGRO">
+                                    <label class="form-check-label" for="inlineCheckbox2">NEGRO</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                                <label class="form-check-label" for="inlineCheckbox3">L</label>
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="GRIS">
+                                    <label class="form-check-label" for="inlineCheckbox3">GRIS</label>
+                                </div>
+                            </div>
+                            <div class="qty my-4">
+                                <span class="minus signos">-</span>
+                                <input type="number" class="count signo" name="qty" value="1">
+                                <span class="plus signos">+</span>
                             </div>
                             
-                            <div class="select">COLOR</div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                <label class="form-check-label" for="inlineCheckbox1">S</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                <label class="form-check-label" for="inlineCheckbox2">M</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                                <label class="form-check-label" for="inlineCheckbox3">L</label>
-                            </div>
                             <div class="row d-flex botones">
                                 <input class="btn btn-primary" type="submit" value="Agregar al carrito">
                                 <input class="btn btn-primary" type="submit" value="Comprar">  

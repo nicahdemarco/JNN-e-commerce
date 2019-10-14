@@ -1,8 +1,4 @@
-/* *{
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 0;
-} */
+
 .faq{
     padding: 20px;
 }
@@ -13,4 +9,8 @@
 
 .response{
     margin-left: 15px;
+}
+.btn-link{
+    color: #212121;
+
 }
