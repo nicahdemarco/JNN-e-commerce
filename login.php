@@ -25,30 +25,6 @@ if ($_POST) {
         }
       }
     }
-  } else {
-
-    $usuario = new Usuario($_POST["email"], $_POST["password"]);
-    $errores = $validar->validacionLogin($usuario);
-    if (count($errores) == 0) {
-      $usuarioEncontrado = BaseMYSQL::buscarPorEmail($usuario->getEmail(), $pdo, 'users');
-      if ($usuarioEncontrado == false) {
-        $errores["email"] = "Usuario no registrado";
-      } else {
-        if (Autenticador::verificarPassword($usuario->getPassword(), $usuarioEncontrado["password"]) != true) {
-          $errores["password"] = "El ususario o la contraseña no son correctos, verifique nuevamente";
-        } else {
-          Autenticador::seteoSesion($usuarioEncontrado);
-          if (isset($_POST["recordar"])) {
-            Autenticador::seteoCookie($usuarioEncontrado);
-          }
-          if (Autenticador::validarUsuario()) {
-            redirect("perfil.php");
-          } else {
-            redirect("registro.php");
-          }
-        }
-      }
-    }
   }
 }
 ?>
@@ -84,7 +60,8 @@ if ($_POST) {
         <form action="" method="POST" class="mt-5">
           <div class="form-group text-left">
             <label for="email">Email:</label>
-            <input name="email" type="email" class="form-control" id="email" placeholder="Correo electrónico">
+            <input  value="<?=$errores['email'] ?? '' ; ?>" 
+            name="email" type="email" class="form-control" id="email" placeholder="Correo electrónico">
             <small id="emailHelp" class="form-text text-muted">nunca compartiremos tu contraseña con nadie.</small>
           </div>
 

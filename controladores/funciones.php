@@ -54,6 +54,7 @@ function inputUsuario($campo)
     if (isset($_POST[$campo])) {
         return $_POST[$campo];
     }
+    return '';
 }
 
 //Esta función nos permite armar el registro cuando el usuario selecciona el avatar
