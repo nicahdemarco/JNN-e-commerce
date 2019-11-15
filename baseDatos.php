@@ -1,4 +1,10 @@
 <?php
+///////////////////////
+///Archivo deprecado///
+///////////////////////
+
+
+
 // Aca tenemos que poner los datos de los productos
 $articulos = [
 	0=>[

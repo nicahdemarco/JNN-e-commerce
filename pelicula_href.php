@@ -9,11 +9,6 @@ if (isset($_GET["id"])) {
   $pelicula=$query->fetchall(PDO::FETCH_ASSOC);
 }
 
-
-//$sql="select movies.id, movies.title, movies.rating, movies.release_date from movies where movies.id = $id_pelicula";
-//$consulta= $pdo->query($sql);
-//$pelicula=$consulta->fetchall(PDO::FETCH_ASSOC);
-//var_dump($pelicula);
 ?>
 <html lang="en" dir="ltr">
   <head>

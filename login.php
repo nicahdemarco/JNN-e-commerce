@@ -1,55 +1,54 @@
 <?php
 require_once("autoload.php");
-if($_POST){
+if ($_POST) {
   $tipoConexion = "MYSQL";
-  if($tipoConexion=="JSON"){
-      $usuario = new Usuario($_POST["email"],$_POST["password"]);
-      $errores= $validar->validacionLogin($usuario);
-      if(count($errores)==0){
-      
-        $usuarioEncontrado = $json->buscarPorEmail($usuario->getEmail());
-        if($usuarioEncontrado == null){
-          $errores["email"]="Usuario no existe";
-        }else{
-          if(Autenticador::verificarPassword($usuario->getPassword(),$usuarioEncontrado["password"] )!=true){
-            $errores["password"]= "El ususario o la contraseña no son correctos, verifique nuevamente";
-          }else{
-            Autenticador::seteoSesion($usuarioEncontrado);
-            if(isset($_POST["recordar"])){
-              Autenticador::seteoCookie($usuarioEncontrado);
-            }
-            if(Autenticador::validarUsuario()){
-              redirect("perfil.php");
-            }else{
-              redirect("registro.php");
-            }
+  if ($tipoConexion == "JSON") {
+    $usuario = new Usuario($_POST["email"], $_POST["password"]);
+    $errores = $validar->validacionLogin($usuario);
+    if (count($errores) == 0) {
+      $usuarioEncontrado = $json->buscarPorEmail($usuario->getEmail());
+      if ($usuarioEncontrado == null) {
+        $errores["email"] = "Usuario no existe";
+      } else {
+        if (Autenticador::verificarPassword($usuario->getPassword(), $usuarioEncontrado["password"]) != true) {
+          $errores["password"] = "El ususario o la contraseña no son correctos, verifique nuevamente";
+        } else {
+          Autenticador::seteoSesion($usuarioEncontrado);
+          if (isset($_POST["recordar"])) {
+            Autenticador::seteoCookie($usuarioEncontrado);
+          }
+          if (Autenticador::validarUsuario()) {
+            redirect("perfil.php");
+          } else {
+            redirect("registro.php");
           }
         }
       }
-  }else{
-    
-      $usuario = new Usuario($_POST["email"],$_POST["password"]);
-      $errores= $validar->validacionLogin($usuario);
-      if(count($errores)==0){
-        $usuarioEncontrado = BaseMYSQL::buscarPorEmail($usuario->getEmail(),$pdo,'users');
-        if($usuarioEncontrado == false){
-          $errores["email"]="Usuario no registrado";
-        }else{
-          if(Autenticador::verificarPassword($usuario->getPassword(),$usuarioEncontrado["password"] )!=true){
-            $errores["password"]="El ususario o la contraseña no son correctos, verifique nuevamente";
-          }else{
-            Autenticador::seteoSesion($usuarioEncontrado);
-            if(isset($_POST["recordar"])){
-              Autenticador::seteoCookie($usuarioEncontrado);
-            }
-            if(Autenticador::validarUsuario()){
-              redirect("perfil.php");
-            }else{
-              redirect("registro.php");
-            }
+    }
+  } else {
+
+    $usuario = new Usuario($_POST["email"], $_POST["password"]);
+    $errores = $validar->validacionLogin($usuario);
+    if (count($errores) == 0) {
+      $usuarioEncontrado = BaseMYSQL::buscarPorEmail($usuario->getEmail(), $pdo, 'users');
+      if ($usuarioEncontrado == false) {
+        $errores["email"] = "Usuario no registrado";
+      } else {
+        if (Autenticador::verificarPassword($usuario->getPassword(), $usuarioEncontrado["password"]) != true) {
+          $errores["password"] = "El ususario o la contraseña no son correctos, verifique nuevamente";
+        } else {
+          Autenticador::seteoSesion($usuarioEncontrado);
+          if (isset($_POST["recordar"])) {
+            Autenticador::seteoCookie($usuarioEncontrado);
+          }
+          if (Autenticador::validarUsuario()) {
+            redirect("perfil.php");
+          } else {
+            redirect("registro.php");
           }
         }
       }
+    }
   }
 }
 ?>
@@ -69,34 +68,51 @@ if($_POST){
 <body>
   <div class="container">
     <?php
-      if(isset($errores)):?>
-        <ul class="alert alert-danger">
-          <?php
-          foreach ($errores as $key => $value) :?>
-            <li> <?=$value;?> </li>
-            <?php endforeach;?>
-        </ul>
-      <?php endif;?>
+    if (isset($errores)) : ?>
+      <ul class="alert alert-danger">
+        <?php
+          foreach ($errores as $key => $value) : ?>
+          <li> <?= $value; ?> </li>
+        <?php endforeach; ?>
+      </ul>
+    <?php endif; ?>
 
-    <section class="row  text-center ">
-      <article class="col-12  " >
-          <h2>Inicio de sesión</h2>
-          <form action="" method="POST"   >
-            <label>Email:</label>
-            <input name="email" type="text" id="email" value="<?=isset($errores["email"])? "":inputUsuario("email") ;?>" placeholder="Correo electrónico"/>
-            <br>
-            <label>Contraseña:</label>
-            <input name="password" type="password" id="password"  value="" placeholder="Contraseña..." />
-            <br>
-            <input name="recordar" type="checkbox" id="recordarme" value="recordar"/> 
-            <label>Recordarme</label>
-            <a href="olvidePassword.php">Olvide mi contraseña</a>
-            <br>
-            
-            <button class="btn-buttom btn-primary" type="submit">Entrar</button>
-          </form>
-        
-      </article> 
+    <section class="row text-center">
+      <article class="mt-5 mx-auto">
+        <h2>Inicio de sesión</h2>
+
+        <form action="" method="POST" class="mt-5">
+          <div class="form-group text-left">
+            <label for="email">Email:</label>
+            <input name="email" type="email" class="form-control" id="email" placeholder="Correo electrónico">
+            <small id="emailHelp" class="form-text text-muted">nunca compartiremos tu contraseña con nadie.</small>
+          </div>
+
+          <div class="form-group text-left">
+            <label for="password">Contraseña:</label>
+            <input name="password" type="password" class="form-control" id="password" value="" placeholder="Contraseña" />
+          </div>
+          <div class="form-group text-left">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="recordar">
+              <label class="form-check-label" for="recordar">
+                Recordarme
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="mt-5 btn btn-primary">Entrar</button>
+
+          <button class="mt-5 ml-3 btn btn-light" type="submit">Olvide mi contraseña</button>
+          <br>
+          <button class="mt-3 btn btn-light" type="submit"><a href="index.php">Volver</a></button>
+
+
+        </form>
+        <!-- value="<?= isset($errores["email"]) ? "" : inputUsuario("email"); ?>" -->
+
+      </article>
+
     </section>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
