@@ -86,50 +86,27 @@ require_once('helpers.php');
 
 		<!-- productos -->
 		<div class="container contenedor-productos">
+			<?php
+				$consulta= $baseDeDatos->prepare("SELECT * FROM tablaProductos");
+				$consulta->execute();
+			?>
+
 			<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 productos" id="productos1">
 				
-				<?php foreach ($articulos as $key => $value):?>
+				<?php foreach ($productos as $producto):?>
 						<article class="col-xs-12 product-card">
 							<a href="detalleProducto.php">
 								<div class="photo-container">
-									<img class="photo" src="images/catalogo/<?= $value['imagen'];?>" alt="pdto 01">
+									<img 
+										class="photo" 
+										src="<?= $producto['imagen'];?>" 
+										title="<?= $producto['nombre'];?>" 
+										alt="<?= $producto['nombre'];?>"
+									>
 								</div>
 								<div class="descripcion">
-									<h4><?=$value['precio'];?></h4>
-									<p><?=$value['descripcion'];?></p>
-								</div>
-							</a>
-						</article>
-				<?php endforeach;?>
-			</section>
-		
-			<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 productos" id="productos2">
-				
-				<?php foreach ($articulos2 as $key => $value):?>
-						<article class="col-xs-12 product-card">
-							<a href="detalleProducto.php">
-								<div class="photo-container">
-									<img class="photo" src="images/catalogo/<?= $value['imagen'];?>" alt="pdto 01">
-								</div>
-								<div class="descripcion">
-									<h4><?=$value['precio'];?></h4>
-									<p><?=$value['descripcion'];?></p>
-								</div>
-							</a>
-						</article>
-				<?php endforeach;?>
-			</section>
-			
-			<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 productos" id="productos3">
-				<?php foreach ($articulos3 as $key => $value):?>
-						<article class="col-xs-12 product-card">
-							<a href="detalleProducto.php">
-								<div class="photo-container">
-									<img class="photo" src="images/catalogo/<?= $value['imagen'];?>" alt="pdto 01">
-								</div>
-								<div class="descripcion">
-									<h4><?=$value['precio'];?></h4>
-									<p><?=$value['descripcion'];?></p>
+									<h4><?= $producto['descripcion'];?></h4>
+									<p>$<?= $producto['precio'];?></p>
 								</div>
 							</a>
 						</article>
