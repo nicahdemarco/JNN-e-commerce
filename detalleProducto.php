@@ -89,8 +89,20 @@
                             </div>
                             
                             <div class="row d-flex botones">
-                                <input class="btn btn-primary" type="submit" value="Agregar al carrito">
-                                <input class="btn btn-primary" type="submit" value="Comprar">  
+
+                                <form action="" method="post">
+                                    <input type="hidden" name="id" id="id" value="<?= $producto['id'];?>">
+                                    <input type="hidden" name="nombre" id="nombre" value="<?= $producto['nombre'];?>">
+                                    <input type="hidden" name="precio" id="precio" value="<?= $producto['precio'];?>">
+                                    <input type="hidden" name="cantidad" id="cantidad" value="<?= 1;?>">
+                                    
+                                    <input 
+                                        class="btn btn-primary" 
+                                        name="btnAccion"
+                                        type="submit" 
+                                        value="Agregar al carrito"
+                                    > 
+                                </form>
                             </div>
                             
                         </aside>

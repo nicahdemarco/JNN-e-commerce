@@ -179,3 +179,39 @@ function validarUsuario()
         return false;
     }
 }
+
+if (isset($_POST['btnAccion'])) {
+    if(!isset($_SESSION['CARRITO'])){
+        
+        $producto=array(
+            'ID' => $ID,
+            'NOMBRE' => $NOMBRE,
+            'CANTIDAD' => $CANTIDAD,
+            'PRECIO' => $PRECIO
+        );
+        $_SESSION['CARRITO'][0]=$producto;
+
+    }else{
+        $numeroProductos = count($_SESSION['CARRITO']);
+        $producto=array(
+            'ID' => $ID,
+            'NOMBRE' => $NOMBRE,
+            'CANTIDAD' => $CANTIDAD,
+            'PRECIO' => $PRECIO
+        );
+        $_SESSION['CARRITO'][$numeroProductos]=$producto;
+    }
+
+}
+
+if (isset($_POST['btnDelete'])) {
+    foreach ($_SESSION['CARRITO'] as $key => $producto){
+        if ($producto['ID']==$ID) {
+            unset($_SESSION['CARRITO'][$key]);
+            echo "<script>alert('Elemento borrado');</script>";
+        }
+
+
+    }
+}
+?>

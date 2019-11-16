@@ -26,8 +26,11 @@ require_once('helpers.php');
             <a href="login.php">Ingresar</a>
         </button>
 
-        <a class="carrito-de-compras" href="#">
+    
+        
+        <a class="carrito-de-compras" href="carrito.php">
             <img src="images/tcart.png" width="40" height="40" data-toggle="tooltip" data-placement="top" title="Carrito de compras" alt="carrito de compras">
+            (<?php echo (empty($_SESSION['CARRITO']))?0:count($_SESSION['CARRITO']);?>) 
         </a>
     </div>
 </nav>
