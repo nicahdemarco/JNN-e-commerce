@@ -60,8 +60,7 @@ if ($_POST) {
         <form action="" method="POST" class="mt-5">
           <div class="form-group text-left">
             <label for="email">Email:</label>
-            <input  value="<?=$errores['email'] ?? '' ; ?>" 
-            name="email" type="email" class="form-control" id="email" placeholder="Correo electrónico">
+            <input value="<?= $errores['email'] ?? ''; ?>" name="email" type="email" class="form-control" id="email" placeholder="Correo electrónico">
             <small id="emailHelp" class="form-text text-muted">nunca compartiremos tu contraseña con nadie.</small>
           </div>
 
@@ -78,12 +77,11 @@ if ($_POST) {
             </div>
           </div>
 
-          <button type="submit" class="mt-5 btn btn-primary">Entrar</button>
-
-          <button class="mt-5 ml-3 btn btn-light" type="submit">Olvide mi contraseña</button>
+          <button type="submit" class="col-lg-12 mt-2 btn btn-primary">Entrar</button>
+          <br>
+          <a href="olvidePassword.php" class="text-right text-muted">Olvide mi contraseña</a>
           <br>
           <button class="mt-3 btn btn-light" type="submit"><a href="index.php">Volver</a></button>
-
 
         </form>
         <!-- value="<?= isset($errores["email"]) ? "" : inputUsuario("email"); ?>" -->

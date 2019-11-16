@@ -1,4 +1,5 @@
-<?php require_once('baseDatos.php');
+<?php require_once('clases/BaseMYSQL.php');
+    $producto = Query::producto($pdo, 'productos');
 
 ?>
 <!doctype html>

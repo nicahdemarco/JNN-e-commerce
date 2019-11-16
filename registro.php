@@ -23,9 +23,10 @@ if ($_POST) {
         redirect("login.php");
       }
     }
-  } else {
+  } 
+  else {
     //Si arriba en la variable $tipoConexion se coloco "MYSQL", entonces genero todo el trabajo pero con MYSQL.
-    //Aquí genero mi objeto usuario, partiendo de la clase Usuario 
+    // Aquí genero mi objeto usuario, partiendo de la clase Usuario 
     $usuario = new Usuario($_POST["email"], $_POST["password"], $_POST["repassword"], $_POST["nombre"], $_FILES);
     //Aquí verifico si los datos registrados por el usuario pasan las validaciones
     $errores = $validar->validacionUsuario($usuario, $_POST["repassword"]);
@@ -57,7 +58,7 @@ if ($_POST) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="master.css">
+  <!-- <link rel="stylesheet" href="master.css"> -->
   <title>Registro de Datos</title>
 </head>
 
@@ -81,12 +82,12 @@ if ($_POST) {
         <form action="" method="POST" enctype="multipart/form-data">
           <label> Usuario:</label>
           <!-- value="<?= (isset($errores["nombre"])) ? "" : inputUsuario("nombre"); ?>" -->
-          <input name="nombre" type="text" id="nombre" placeholder="Nombre de usuario" />
+          <input name="nombre" type="text" id="nombre" value="<?= (isset($errores["nombre"])) ? "" : inputUsuario("nombre"); ?>" placeholder="Nombre de usuario" />
           <br>
 
           <label>Email:</label>
           <!-- <!-- value="<?= isset($errores["email"]) ? "" : inputUsuario("email"); ?>" --> -->
-          <input name="email" type="text" id="email" placeholder="Correo electrónico" />
+          <input name="email" type="text" id="email" value="<?= isset($errores["email"]) ? "" : inputUsuario("email"); ?>" placeholder="Correo electrónico" />
           <br>
           <label>Contraseña:</label>
 

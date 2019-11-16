@@ -1,4 +1,8 @@
 <?php
+///////////////////////
+///Archivo deprecado///
+///////////////////////
+
 class BaseJSON extends BaseDatos{
     private $nombreArchivo;
     public function __construct($nombreArchivo){

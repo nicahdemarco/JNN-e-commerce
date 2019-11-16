@@ -13,7 +13,7 @@ require_once("clases/Query.php");
 
 //Declaro mis variables
 $host = "localhost";
-$bd = "register";
+$bd = "ecommerce";
 $usuario = "root";
 $password = "";
 $puerto = "3306";

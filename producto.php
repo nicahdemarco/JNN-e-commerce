@@ -2,13 +2,19 @@
 
 <?php
 require_once("autoload.php");
-if (isset($_GET["id"])) {
-  $id_pelicula=$_GET["id"];
-  $query = $pdo->prepare("select movies.id, movies.title, movies.rating, movies.release_date from movies where movies.id = '$id_pelicula'");
-  $query->execute();
-  $pelicula=$query->fetchall(PDO::FETCH_ASSOC);
-}
+// if (isset($_GET["id"])) {
+//   $id_pelicula=$_GET["id"];
+//   $query = $pdo->prepare("select movies.id, movies.title, movies.rating, movies.release_date from movies where movies.id = '$id_pelicula'");
+//   $query->execute();
+//   $pelicula=$query->fetchall(PDO::FETCH_ASSOC);
+// }
 
+if (isset($_GET["id"])) {
+    $producto = $_GET["id"];
+    $query = $pdo->prepare("select productos.id, productos.nombre, productos.descripcion, productos.precio from productos where productos.id_producto = '$id_producto'");
+    $query->execute();
+    $producto = $query->fetchall(PDO::FETCH_ASSOC);
+}
 ?>
 <html lang="en" dir="ltr">
   <head>
@@ -17,11 +23,11 @@ if (isset($_GET["id"])) {
     <title></title>
   </head>
   <body>
-    <?php foreach ($pelicula as $key => $value):?>
-      <h1><?= $value["title"] ;?></h1>
+    <?php foreach ($productos as $key => $value):?>
+      <h1><?= $value["nombre"] ;?></h1>
     <?php endforeach;?>
     <ul>
-    <?php foreach ($pelicula as $index => $attributes) : ?>
+    <?php foreach ($productos as $index => $attributes) : ?>
       <?php foreach($attributes as $key => $value): ?>
         <li><?= $key." : ".$value ?> </li>
       <?php endforeach;?>

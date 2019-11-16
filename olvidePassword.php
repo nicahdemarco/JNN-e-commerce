@@ -39,7 +39,7 @@ if($_POST){
       <?php endif;?>
 
   
-    <section class="row  text-center ">
+    <section class="row text-center ">
       <article class="col-12  " >
           <h2>Recuperando Contraseña</h2>
           <form action="" method="POST" enctype= "multipart/form-data"  >
